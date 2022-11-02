@@ -155,6 +155,16 @@ display: flex;
     margin-left: 50px;
 }
 
+.contact-icon{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contact-link:hover,
+.contact-link:focus{
+    fill: var(--blue-color);
+}
+
 /* Cтилі html */
 
 /* Hero */
@@ -224,33 +234,6 @@ display: flex;
     width: 270px;
 }
 
-.advantages-item::before{
-    content: '';
-    display: block;   
-    height: 120px;    
-    background-color: #F5F4FA;    
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
-
-.icon-antenna::before{       
-    background-image:url(../images/antenna.svg) ;
-}
-
-.icon-clock::before{
-    background-image:url(../images/clock\ .svg) ;
-}
-
-.icon-diagram::before{
-    background-image: url(../images/diagram\ .svg);
-}
-
-.icon-astronaut::before{
-    background-image: url(../images/astronaut\ .svg);
-}
-
-
 .advantages-title{
 margin-bottom: 10px;
 
@@ -262,6 +245,17 @@ text-transform: uppercase;
 .advantages-text{
     line-height: 1.7;
     color: var(--text-color);
+}
+
+.advantages-icon{
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 /* Чим ми займаємось *
@@ -278,7 +272,8 @@ text-transform: uppercase;
 }
 
 .work-title,
-.team-title{
+.team-title,
+.clients-title{
 text-align: center;
 margin-bottom: 50px;
 
@@ -321,6 +316,38 @@ color: var(--text-color);
 }
 .team-img{
     display: block;
+}
+
+
+/* Постійні клієнти */
+
+.clients-list{
+    display: flex; 
+    gap: 30px;   
+}
+
+.clients-link{  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;
+   height: 92px;
+   border: 1px solid#AFB1B8 ;
+   border-radius: 4px;   
+}
+
+.clients-icon{
+    fill: #AFB1B8;
+}
+
+.clients-icon:hover,
+.clients-icon:focus{
+    fill: var(--blue-color);
+}
+
+.clients-link:hover,
+.clients-link:focus{
+   border-color: var(--blue-color);
 }
 
 
