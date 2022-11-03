@@ -302,10 +302,9 @@ color: var(--text-color);
 .team-main {
     display: flex;
     text-align: center;
+    gap: 30px;
 }
-.team-main li+li{
-    margin-left: 30px;
-}
+
 
 .team-card{
     width: 270px;
@@ -324,8 +323,6 @@ justify-content: space-between;
 margin-left: 32px;
 margin-right: 32px;
 margin-top: 16px;
-margin-bottom: 30px;
-
 }
 
 
@@ -348,6 +345,11 @@ margin-bottom: 30px;
 
 .team-icon{
    fill: currentColor;
+}
+
+.team-main-item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 
@@ -373,22 +375,27 @@ margin-bottom: 30px;
     fill: #AFB1B8;
 }
 
-.clients-icon:hover,
-.clients-icon:focus{
-    fill: var(--blue-color);
-}
-
 .clients-link:hover,
 .clients-link:focus{
    border-color: var(--blue-color);
 }
+
+.clients-link:hover svg,
+.clients-link:focus svg{
+    fill: var(--blue-color);
+}
+
 
 
 /* Footer */
 .footer {
  padding-top: 60px;
  padding-bottom: 60px;
- background: #2F303A;   
+ background: #2F303A;  
+}
+
+.footer-flex{
+    display: flex;
 }
 
 .footer-logo{
@@ -415,6 +422,44 @@ margin-bottom: 30px;
 .footer-link:hover,
 .footer-link:focus{
     color: var(--blue-color);
+}
+
+.social-list{
+    display: flex;
+    gap: 10px;
+}
+
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon{
+    fill: var(--white-color);
+}
+
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--blue-color);
+}
+
+.social-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;        
+        text-transform: uppercase;
+        margin-bottom: 20px;    
+        color:var(--white-color);
+}
+
+.footer-social{
+    margin-left: 70px;
+    padding-top: 12px;    
 }
 
 
@@ -453,6 +498,7 @@ margin-bottom: 30px;
 .projects-button:focus{
     color: var(--white-color);
     background-color: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-all{
@@ -471,6 +517,11 @@ margin-bottom: 30px;
 
 .projects-item{
     width: calc( (100% - 60px) / 3);    
+}
+
+.projects-item:hover,
+.projects-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
