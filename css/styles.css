@@ -318,6 +318,22 @@ color: var(--text-color);
     display: block;
 }
 
+.team-list{
+display: flex;
+gap: 10px;
+}
+
+
+.team-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+
+
 
 /* Постійні клієнти */
 
