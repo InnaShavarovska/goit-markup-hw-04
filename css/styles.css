@@ -253,8 +253,7 @@ text-transform: uppercase;
     background-color: #F5F4FA;
     display: flex;
     justify-content: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -396,6 +395,7 @@ margin-top: 16px;
 
 .footer-flex{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-logo{
@@ -459,7 +459,6 @@ margin-top: 16px;
 
 .footer-social{
     margin-left: 70px;
-    padding-top: 12px;    
 }
 
 
